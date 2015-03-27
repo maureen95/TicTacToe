@@ -3,50 +3,151 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
- * @author Sophie Guillot
+ * @author Sophie Guillot, Aline Hudry & Maureen Ravanel
  */
 public class Jeu extends JFrame {
+	
 	public Jeu() {
 		initComponents();
 	}
 
-	private void b1ActionPerformed(ActionEvent e) {
+	public JButton b1;
+	public JButton b2;
+	public JButton b3;
+	public JButton b4;
+	public JButton b5;
+	public JButton b6;
+	public JButton b7;
+	public JButton b8;
+	public JButton b9;
 
+	public void b1ActionPerformed(ActionEvent e) {
+		if(b1.getText().equals("")) {
+			if (test.playerTurn == true) {
+				b1.setText("X");
+				test.checkforwin();
+				test.playerTurn = false;
+			} else {
+				b1.setText("O");
+				test.checkforwin();
+				test.playerTurn = true;
+			}
+		}
 	}
 
-	private void b2ActionPerformed(ActionEvent e) {
-
+	public void b2ActionPerformed(ActionEvent e) {
+		if(b2.getText().equals("")) {
+			if (test.playerTurn == true) {
+				b2.setText("X");
+				test.checkforwin();
+				test.playerTurn = false;
+			} else {
+				b2.setText("O");
+				test.checkforwin();
+				test.playerTurn = true;
+			}
+		}
 	}
 
-	private void b3ActionPerformed(ActionEvent e) {
-
+	public void b3ActionPerformed(ActionEvent e) {
+		if(b3.getText().equals("")) {
+			if (test.playerTurn == true) {
+				b3.setText("X");
+				test.checkforwin();
+				test.playerTurn = false;
+			} else {
+				b3.setText("O");
+				test.checkforwin();
+				test.playerTurn = true;
+			}
+		}
 	}
 
-	private void b4ActionPerformed(ActionEvent e) {
-
+	public void b4ActionPerformed(ActionEvent e) {
+		if(b4.getText().equals("")) {
+			if (test.playerTurn == true) {
+				b4.setText("X");
+				test.checkforwin();
+				test.playerTurn = false;
+			} else {
+				b4.setText("O");
+				test.checkforwin();
+				test.playerTurn = true;
+			}
+		}
 	}
 
-	private void b5ActionPerformed(ActionEvent e) {
-
+	public void b5ActionPerformed(ActionEvent e) {
+		if(b5.getText().equals("")) {
+			if (test.playerTurn == true) {
+				b5.setText("X");
+				test.checkforwin();
+				test.playerTurn = false;
+			} else {
+				b5.setText("O");
+				test.checkforwin();
+				test.playerTurn = true;
+			}
+		}
 	}
 
-	private void b6ActionPerformed(ActionEvent e) {
-
+	public void b6ActionPerformed(ActionEvent e) {
+		if(b6.getText().equals("")) {
+			if (test.playerTurn == true) {
+				b6.setText("X");
+				test.checkforwin();
+				test.playerTurn = false;
+			} else {
+				b6.setText("O");
+				test.checkforwin();
+				test.playerTurn = true;
+			}
+		}
 	}
 
-	private void b7ActionPerformed(ActionEvent e) {
-
+	public void b7ActionPerformed(ActionEvent e) {
+		if(b7.getText().equals("")) {
+			if (test.playerTurn == true) {
+				b7.setText("X");
+				test.checkforwin();
+				test.playerTurn = false;
+			} else {
+				b7.setText("O");
+				test.checkforwin();
+				test.playerTurn = true;
+			}
+		}
 	}
 
-	private void b8ActionPerformed(ActionEvent e) {
-
+	public void b8ActionPerformed(ActionEvent e) {
+		if(b8.getText().equals("")) {
+			if (test.playerTurn == true) {
+				b8.setText("X");
+				test.checkforwin();
+				test.playerTurn = false;
+			} else {
+				b8.setText("O");
+				test.checkforwin();
+				test.playerTurn = true;
+			}
+		}
 	}
 
-	private void b9ActionPerformed(ActionEvent e) {
-
+	public void b9ActionPerformed(ActionEvent e) {
+		if(b9.getText().equals("")) {
+			if (test.playerTurn == true) {
+				b9.setText("X");
+				test.checkforwin();
+				test.playerTurn = false;
+			} else {
+				b9.setText("O");
+				test.checkforwin();
+				test.playerTurn = true;
+			}
+		}
 	}
 
-	private void initComponents() {
+	public void initComponents() {
 
 		b1 = new JButton();
 		b2 = new JButton();
@@ -62,7 +163,7 @@ public class Jeu extends JFrame {
 		Container contenu = getContentPane();
 
 		// ---- b1 ----
-		b1.setText("1");
+		b1.setText("");
 		b1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -71,7 +172,7 @@ public class Jeu extends JFrame {
 		});
 
 		// ---- b2 ----
-		b2.setText("2");
+		b2.setText("");
 		b2.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -80,7 +181,7 @@ public class Jeu extends JFrame {
 		});
 
 		// ---- b3 ----
-		b3.setText("3");
+		b3.setText("");
 		b3.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -89,7 +190,7 @@ public class Jeu extends JFrame {
 		});
 
 		// ---- b4 ----
-		b4.setText("4");
+		b4.setText("");
 		b4.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -98,7 +199,7 @@ public class Jeu extends JFrame {
 		});
 
 		// ---- b5 ----
-		b5.setText("5");
+		b5.setText("");
 		b5.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -107,7 +208,7 @@ public class Jeu extends JFrame {
 		});
 
 		// ---- b6 ----
-		b6.setText("6");
+		b6.setText("");
 		b6.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -116,7 +217,7 @@ public class Jeu extends JFrame {
 		});
 
 		// ---- b7 ----
-		b7.setText("7");
+		b7.setText("");
 		b7.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -125,7 +226,7 @@ public class Jeu extends JFrame {
 		});
 
 		// ---- b8 ----
-		b8.setText("8");
+		b8.setText("");
 		b8.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -134,6 +235,7 @@ public class Jeu extends JFrame {
 		});
 
 		// ---- b9 ----
+		b9.setText("");
 		b9.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -155,14 +257,4 @@ public class Jeu extends JFrame {
 																		
 	
 	}
-
-	private JButton b1;
-	private JButton b2;
-	private JButton b3;
-	private JButton b4;
-	private JButton b5;
-	private JButton b6;
-	private JButton b7;
-	private JButton b8;
-	private JButton b9;
 }
